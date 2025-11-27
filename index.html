@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Bilawal Zaman - Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+  <style>
+    body { background:#1e1e1e; color:#d4d4d4; font-family:'Fira Code',monospace; margin:0; padding:40px 20px; line-height:1.8; }
+    .container { max-width:1150px; margin:auto; background:#252526; border-radius:12px; overflow:hidden; box-shadow:0 15px 40px rgba(0,0,0,0.7); }
+    pre { margin:0 !important; padding:50px 45px !important; font-size:16.5px; white-space: pre-wrap; word-wrap: break-word; }
+    .clickable-link { color:#79b8ff; text-decoration:underline; cursor:pointer; }
+    .clickable-link:hover { color:#ff79c6; }
+    .email-link { color:#ff6b6b !important; text-decoration:underline; cursor:pointer; }
+    .email-link:hover { color:#ff8787 !important; }
+  </style>
+</head>
+<body>
+<body>
+  <div class="container">
+    <pre><code class="language-js" id="resume-code">
+/**
+ * Muhammad Bilawal Zaman
+ * Full-Stack Software Engineer | MERN + Laravel | Cybersecurity Expert
+ * +92 323 4181571 | mbilawalzaman@gmail.com
+ */
+
+const MuhammadBilawalZaman = {
+  name: "Muhammad Bilawal Zaman",
+  title: "Software Engineer",
+  location: "Lahore, Pakistan",
+
+  contact: {
+    phone: "+92 323 4181571",
+    email: "mbilawalzaman@gmail.com",
+    linkedin:  "linkedin.com/in/mbilawalzaman",
+    github:    "github.com/mbilawalzaman",
+    portfolio: "mbilawalzaman-portfolio.netlify.app"
+  },
+
+  professionalSummary: `Results-oriented Software Engineer with over a year of hands-on experience 
+  in designing, developing, and deploying full-stack web applications. Expert in building 
+  scalable backend systems with Node.js & Laravel and crafting dynamic, responsive UIs 
+  using React.js, Angular.js, and Inertia.js. Passionate team player thriving in fast-paced 
+  Agile environments.`,
+
+  skills: {
+    frontend:  ["React.js", "Next.js", "Angular.js", "Tailwind CSS", "Inertia.js", "HTML5", "CSS3"],
+    backend:   ["Node.js", "Express.js", "Laravel", "PHP"],
+    databases: ["MySQL", "MongoDB"],
+    tools:     ["Git & GitHub", "RESTful APIs", "WebSocket", "Postman", "Jira", "Agile/Scrum"],
+    languages: ["JavaScript (ES6+)", "PHP"]
+  },
+
+  experience: [
+    {
+      company: "BlockAPT",
+      role: "Full Stack Developer",
+      duration: "Apr 2024 – Nov 2025",
+      achievements: [
+        "Architected & built live enterprise cybersecurity platform (multi-tenant SaaS)",
+        "Developed real-time global attack map using React + WebSocket + Redis",
+        "Engineered scalable backend with Laravel & Node.js",
+        "Designed and optimized MySQL/MongoDB schemas for high-performance security data",
+        "Led Agile practices – sprints, code reviews, standups"
+      ]
+    },
+    {
+      company: "Axis Cyber-Solutions",
+      role: "Front-End Developer",
+      duration: "May 2023 – Mar 2024",
+      achievements: [
+        "Built responsive web apps using React.js & Next.js with SSR",
+        "Delivered 2 major client projects with clean, maintainable code",
+        "Improved performance & SEO through server-side rendering"
+      ]
+    }
+  ],
+
+  education: [
+    { degree: "BS Software Engineering", institution: "Virtual University of Pakistan", year: "2019 – 2023" },
+    { certification: "MERN Stack Training", institution: "Knowledge Streams – Lahore", year: "2023" }
+  ],
+
+  projects: {
+    BlockAPT:     "blockapt.com",
+    Pathways:     "pathways.myaidoctor.online",
+    Portfolio:    "mbilawalzaman-portfolio.netlify.app"
+  },
+
+  projectDetails: {
+    BlockAPT:  "Real-time threat intelligence & attack visualization platform",
+    Pathways:  : "Healthcare platform with appointment system & patient management",
+    Portfolio: "Modern responsive portfolio built with Next.js + Tailwind"
+  },
+
+  languages: ["English (Professional)", "Urdu (Native)"],
+  interests: ["Cybersecurity", "Real-time Systems", "Open Source", "System Design"]
+};
+
+// Available for Full-Stack roles (Remote / On-site)
+// Click the email above to message me directly
+console.log("%cMuhammad Bilawal Zaman → Ready to join your team!", "color:#50fa7b; font-size:20px; font-weight:bold");
+    </code></pre>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = {
+        "linkedin.com/in/mbilawalzaman": "https://www.linkedin.com/in/mbilawalzaman",
+        "github.com/mbilawalzaman": "https://github.com/mbilawalzaman",
+        "mbilawalzaman-portfolio.netlify.app": "https://mbilawalzaman-portfolio.netlify.app",
+        "blockapt.com": "https://blockapt.com",
+        "pathways.myaidoctor.online": "https://pathways.myaidoctor.online",
+        "mbilawalzaman@gmail.com": "mailto:mbilawalzaman@gmail.com?subject=Job%20Opportunity%20-%20Full-Stack%20Role&body=Hi%20Bilawal,%0D%0A%0D%0AI%20came%20across%20your%20amazing%20resume%20and%20would%20love%20to%20discuss%20a%20role..."
+      };
+
+      const code = document.getElementById("resume-code");
+      let html = code.innerHTML;
+
+      Object.keys(links).forEach(text => {
+        const escapedText = text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(\\b${escapedText}\\b)`, 'g');
+        const isEmail = text.includes('@');
+        const className = isEmail ? 'email-link' : 'clickable-link';
+        html = html.replace(regex, `<a href="${links[text]}" target="${isEmail ? '_self' : '_blank'}" class="${className}">$1</a>`);
+      });
+
+      code.innerHTML = html;
+    });
+  </script>
+</body>
+</html>
