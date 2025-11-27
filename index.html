@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammad Bilawal Zaman - Software Engineer</title>
+  <link rel="icon" href="data:,">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
   <style>
-    body { background:#1e1e1e; color:#d4d4d4; font-family:'Fira Code',monospace; margin:0; padding:40px 20px; line-height:1.8; }
-    .container { max-width:1150px; margin:auto; background:#252526; border-radius:12px; overflow:hidden; box-shadow:0 15px 40px rgba(0,0,0,0.7); }
-    pre { margin:0 !important; padding:50px 45px !important; font-size:16.5px; white-space: pre-wrap; word-wrap: break-word; }
-    .clickable-link { color:#79b8ff; text-decoration:underline; cursor:pointer; }
-    .clickable-link:hover { color:#ff79c6; }
-    .email-link { color:#ff6b6b !important; text-decoration:underline; cursor:pointer; }
-    .email-link:hover { color:#ff8787 !important; }
+    body {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      background: #252526;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    pre {
+      margin: 0 !important;
+      padding: 40px 30px !important;
+      font-size: 16px;
+      white-space: pre-wrap;
+      /* wrap long lines */
+      word-wrap: break-word;
+      /* wrap long words */
+      word-break: break-word;
+      /* force line breaks if necessary */
+      overflow-x: hidden;
+      /* hide horizontal scroll */
+      overflow-y: auto;
+      /* keep vertical scroll */
+    }
+
+    /* clickable links inside code */
+    pre a {
+      display: inline;
+      color: #79b8ff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    pre a:hover {
+      color: #ff79c6;
+    }
+
+    pre a.email-link {
+      color: #ff6b6b !important;
+    }
+
+    pre a.email-link:hover {
+      color: #ff8787 !important;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      pre {
+        padding: 20px;
+        font-size: 14px;
+        white-space: pre-wrap;
+      }
+
+      .container {
+        border-radius: 8px;
+      }
+    }
   </style>
 </head>
-<body>
+
 <body>
   <div class="container">
     <pre><code class="language-js" id="resume-code">
@@ -91,7 +156,7 @@ const MuhammadBilawalZaman = {
 
   projectDetails: {
     BlockAPT:  "Real-time threat intelligence & attack visualization platform",
-    Pathways:  : "Healthcare platform with appointment system & patient management",
+    Pathways:  "Healthcare platform with appointment system & patient management",
     Portfolio: "Modern responsive portfolio built with Next.js + Tailwind"
   },
 
@@ -105,8 +170,8 @@ console.log("%cMuhammad Bilawal Zaman → Ready to join your team!", "color:#50f
     </code></pre>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-javascript.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const links = {
@@ -132,5 +197,15 @@ console.log("%cMuhammad Bilawal Zaman → Ready to join your team!", "color:#50f
       code.innerHTML = html;
     });
   </script>
+  <script>
+    setTimeout(() => {
+      console.log("%cMuhammad Bilawal Zaman %c→ Ready to join your team! 🚀",
+        "color:#50fa7b; font-size:22px; font-weight:bold; background:#1e1e1e; padding:10px 20px; border-radius:12px;",
+        "color:#ff79c6; font-size:18px;");
+      console.log("%cFull-Stack Engineer | MERN + Laravel | Cybersecurity", "color:#8be9fd; font-size:14px;");
+      console.log("%cHire me → mbilawalzaman@gmail.com", "color:#ffb86c; font-size:14px;");
+    }, 500);
+  </script>
 </body>
+
 </html>
